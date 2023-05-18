@@ -47,6 +47,10 @@ font-family: 'Poppins', sans-serif;
   background-color: var(--color-primary);
   color: var(--color-black);
 }
+.primary-bg:hover {
+  background-color: var(--color-gray-200);
+  color: var(--color-black);
+}
 
 html {
   scroll-behavior: smooth;
@@ -113,7 +117,9 @@ a {
   text-align: justify;
   color: var(--color-white);
 }
-
+.begin-btn {
+  font-weight: 700;
+}
 .img-fluid {
   border-radius: 25px;
   box-shadow: 1px 1px 30px var(--color-primary);
@@ -263,6 +269,7 @@ hr.solid {
   width: 90%;
 }
 
+/* Animation */
 .grow-and-shrink-img {
   z-index: -1;
   animation: grow-and-shrink 4000ms;
@@ -335,20 +342,8 @@ hr.solid {
   }
 }
 
-.btn-showcase {
-  font-family: "Poppins", sans-serif;
-  z-index: 4;
-  color: var();
-}
 
-.showcase-section {
-  width: 50vw;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
+/* Carousel */
 .carousel {
   position: absolute;
   height: 100%;
@@ -365,7 +360,29 @@ hr.solid {
   pointer-events: none;
 }
 
-/* Shadow 1 */
+/* Showcase Carousel */
+.btn-showcase {
+  font-family: "Poppins", sans-serif;
+  z-index: 4;
+  border-radius: 25px;
+  color: var(--color-white);
+}
+.btn-showcase a:hover {
+  color: var(--color-primary);
+  background-color: var(--color-gray-200);
+}
+
+.showcase-section {
+  width: 50vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+/* Shadow Section */
 .interactive-section-one {
   position: relative;
   display: flex;
@@ -396,7 +413,7 @@ hr.solid {
   z-index: 5;
 }
 
-/* Hover Section */
+/* Animation Hover Section */
 
 /* Programs Nav Bar Colors */
 .bg-dropdown-1:hover {
@@ -408,7 +425,6 @@ hr.solid {
   background-color: var(--color-primary);
   color: var(--color-white);
 }
-
 
 /* .icon-spin:hover {animation:spin 12s linear infinite;} */
 .hover-underline-animation {
@@ -436,12 +452,11 @@ hr.solid {
   transform-origin: bottom left;
 }
 
+.color-hover {
+  color: var(--color-white);
+}
 .color-hover:hover {
   color: var(--color-primary);
-}
-
-.translate-hover:hover {
-  transform: translateY(-5px);
 }
 
 .transform-scale-sml:hover {
