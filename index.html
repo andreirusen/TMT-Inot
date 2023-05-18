@@ -30,6 +30,45 @@
       href="https://kit.fontawesome.com/af8da007ac.css"
       crossorigin="anonymous"
     />
+    <!-- Map Script -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <script>
+      ((g) => {
+        var h,
+          a,
+          k,
+          p = "The Google Maps JavaScript API",
+          c = "google",
+          l = "importLibrary",
+          q = "__ib__",
+          m = document,
+          b = window;
+        b = b[c] || (b[c] = {});
+        var d = b.maps || (b.maps = {}),
+          r = new Set(),
+          e = new URLSearchParams(),
+          u = () =>
+            h ||
+            (h = new Promise(async (f, n) => {
+              await (a = m.createElement("script"));
+              e.set("libraries", [...r] + "");
+              for (k in g)
+                e.set(
+                  k.replace(/[A-Z]/g, (t) => "_" + t[0].toLowerCase()),
+                  g[k]
+                );
+              e.set("callback", c + ".maps." + q);
+              a.src = `https://maps.${c}apis.com/maps/api/js?` + e;
+              d[q] = f;
+              a.onerror = () => (h = n(Error(p + " could not load.")));
+              a.nonce = m.querySelector("script[nonce]")?.nonce || "";
+              m.head.append(a);
+            }));
+        d[l]
+          ? console.warn(p + " only loads once. Ignoring:", g)
+          : (d[l] = (f, ...n) => r.add(f) && u().then(() => d[l](f, ...n)));
+      })({ key: "AIzaSyC_s-dLS1bgs-qXCqLDdGoBJne4ox4sxbw", v: "weekly" });
+    </script>
 
     <!-- CSS -->
     <link rel="stylesheet" href="/css/main.css" />
@@ -89,17 +128,27 @@
               >
               <ul class="dropdown-menu text-center container-dropdown">
                 <li>
-                  <a class="dropdown-item bg-dropdown-1" href="#abonamente"
+                  <a
+                    class="dropdown-item bg-dropdown-1 fw-semibold"
+                    href="#abonamente"
                     >Grup</a
                   >
                 </li>
                 <hr class="dropdown-divider" />
                 <li>
-                  <a class="dropdown-item bg-dropdown-2" href="#abonamente"
+                  <a
+                    class="dropdown-item bg-dropdown-2 fw-semibold"
+                    href="#abonamente"
                     >Individual</a
                   >
                 </li>
               </ul>
+            </li>
+            <!-- Despre -->
+            <li class="nav-item hover-underline-animation">
+              <a href="#contact" class="nav-link text-dark" aria-current="page"
+                >CONTACT</a
+              >
             </li>
           </ul>
         </div>
@@ -172,7 +221,7 @@
             class="btn-showcase btn primary-bg btn-lg grow-and-shrink"
             type="button"
           >
-            <a class="begin-btn fw" href="#abonamente">INCEPE ACUM</a>
+            <a class="begin-btn fw-semibold" href="#abonamente">INCEPE ACUM</a>
           </button>
         </div>
       </section>
@@ -185,17 +234,13 @@
         <div class="reveal">
           <h1 class="text-center h-text m-5">Despre</h1>
         </div>
-
         <!-- Content -->
         <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2">
-          <!-- First section -->
           <!-- Text -->
-          <div
-            class="col my-4 text-white text-justify align-self-center reveal"
-          >
-            <span class="text-wrap">
+          <div class="col my-4 reveal">
+            <span class="text-wrap text-white text-justify align-self-center">
               <h2>
-                <span class="color-primary-text"></span>
+                <span class="color-primary-text">Rusen Alin</span>
               </h2>
               <p class="text-size-md">
                 Cu o pasiune pentru înot care a început la vârsta de 4 ani,
@@ -221,44 +266,8 @@
           <div class="col my-4 reveal">
             <img
               class="showcase-img"
-              src="/Assets/about/medals.jpg"
+              src="/Assets/home/home-5.jpeg"
               alt="Medals"
-            />
-          </div>
-
-          <!-- Second Section -->
-          <!-- Text -->
-          <div
-            class="col my-4 text-white text-justify align-self-center reveal"
-          >
-            <p class="text-size-md">
-              By adopting these simple habits, you can increase your
-              <span class="color-primary-text">productivity</span>, stay
-              <span class="color-primary-text">motivated</span>, and make steady
-              <span class="color-primary-text">progress</span> towards your goals.
-            </p>
-            <br />
-            <p class="text-size-md">
-              Remember,
-              <span class="color-primary-text">success is not achieved overnight</span
-              >, but through
-              <span class="color-primary-text">consistent effort and dedication</span
-              >.
-            </p>
-            <br />
-            <p>
-              So start implementing these habits
-              <span class="color-primary-text">today</span>, and see the results for
-              yourself!
-            </p>
-          </div>
-          <!-- Img -->
-          <div class="col my-4 reveal">
-            <img
-              class="img-fluid"
-              alt="#"
-              src="/Assets/home-page/img-home-2.jpg"
-              alt=""
             />
           </div>
           <div id="abonamente"></div>
@@ -267,13 +276,29 @@
     </main>
 
     <!-- Abonamente -->
-    <section class="container my-5 table-container reveal">
-      <!-- Titlu Abonamente -->
+    <section class="container reveal p-1 p-sm-2 p-md-4 p-lg-5">
+      <!-- Text -->
       <div class="reveal">
-        <h1 class="text-center h-text">Abonamente</h1>
+        <!-- Titlu  -->
+        <h1 class="text-center h-text my-5">Abonamente</h1>
+        <!-- Continut -->
+        <span class="text-wrap text-white text-justify align-self-center my-5">
+          <p class="text-size-md">
+            Ne dorim să oferim tuturor posibilitatea de a învăța să înoate,
+            indiferent de vârstă. Astfel, ne-am structurat cursurile în două
+            categorii: pentru copii cu vârsta peste 3 ani și pentru adulți.
+          </p>
+          <br />
+          <p class="text-size-md">
+            Fiecare categorie are multiple variante de program, adaptate
+            nevoilor și disponibilității fiecăruia. În continuare, vă prezentăm
+            detalii despre numărul de ședințe, modul în care acestea se
+            desfășoară și costurile aferente, într-un tabel clar și concis.
+          </p>
+        </span>
       </div>
       <!-- Tabel Abonamente -->
-      <div class="my-5 reveal">
+      <div class="my-5 reveal table-container">
         <table class="table text-white">
           <thead>
             <tr class="text-center">
@@ -315,10 +340,32 @@
 
     <!-- Intrebari frecvente -->
 
+    <!-- Contact -->
+    <section class="text-light p-md-5 py-5" id="contact">
+      <div
+        class="container d-flex flex-column flex-md-row justify-content-between align-item-center reveal"
+      >
+        <form action="https://formspree.io/f/xknaeajd" method="POST">
+          <label>
+            Your email:
+            <input type="email" name="email" />
+          </label>
+          <label>
+            Your message:
+            <textarea name="message"></textarea>
+          </label>
+          <!-- your other form fields go here -->
+          <button type="submit" class="">Send</button>
+        </form>
+      </div>
+    </section>
+
     <!-- Rating Title  -->
     <section class="container my-5">
       <div class="header-content container reveal">
-        <h1>1,000<span class="color-primary-text">+</span> de oameni mulțumiți</h1>
+        <h1>
+          1,000<span class="color-primary-text">+</span> de oameni mulțumiți
+        </h1>
         <p>
           Oferim doar
           <span class="color-primary-text">servicii excelente</span>
@@ -331,14 +378,15 @@
     </section>
 
     <!-- Rating Carousel -->
-    <div class="carousel slide container rating-container reveal"
+    <div
       id="carouselExampleAutoplaying"
+      class="carousel slide container reveal p-1 p-sm-2 p-md-4 p-lg-5"
       data-bs-ride="carousel"
     >
       <!-- Cards -->
-      <div class="carousel-inner text-justify">
+      <div class="carousel-inner rating-container text-justify">
         <!-- Card 1 -->
-        <div class="carousel-item active">
+        <div class="carousel-item p-3 active">
           <div class="user-review">
             <!-- User Details -->
             <div class="user-details">
@@ -392,9 +440,8 @@
             </p>
           </div>
         </div>
-
         <!-- Card 2 -->
-        <div class="carousel-item">
+        <div class="carousel-item p-3">
           <div class="user-review">
             <!-- User Details -->
             <div class="user-details">
@@ -446,9 +493,8 @@
             </p>
           </div>
         </div>
-
         <!-- Card 3 -->
-        <div class="carousel-item">
+        <div class="carousel-item p-3">
           <div class="user-review">
             <!-- User Details -->
             <div class="user-details">
@@ -525,34 +571,14 @@
       </button>
     </div>
 
-    <!-- Newsletter Section -->
-    <section class="text-light p-md-5 py-5">
+    <!-- Location Map -->
+    <div class="container-fluid bg-black p-1 p-sm-2 p-md-4 p-lg-5">
       <div
-        class="container d-flex flex-column flex-md-row justify-content-between align-item-center reveal"
-      >
-        <div class="col">
-          <h3 class="my-3">
-            Sign up for our <span class="color-primary-text">newsletter</span>
-          </h3>
-        </div>
-        <form action="">
-          <div class="col input-group my-3">
-            <input
-              class="form-control"
-              type="text"
-              name="email"
-              placeholder="Enter your email"
-              aria-label="Enter your email"
-              aria-describedby="button-addon2"
-            />
-
-            <button class="btn primary-bg button-addon2" type="button">
-              SUBSCRIBE
-            </button>
-          </div>
-        </form>
-      </div>
-    </section>
+        id="map"
+        style="width: 100%; height: 400px"
+        class="container bg-white reveal box-shadow"
+      ></div>
+    </div>
 
     <!-- Footer Section -->
     <footer class="footer px-3">
@@ -652,7 +678,6 @@
     </div>
 
     <!-- Script -->
-    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
