@@ -14,7 +14,7 @@ function scrollToContent() {
 
 //Typing Section
 var typed = new Typed("#typed-strings", {
-  strings: ["Start exercising today!", "No more excuses!", "You are ready!"],
+  strings: ["Cursuri de inot!"],
   typeSpeed: 70,
   backSpeed: 50,
   loop: true,

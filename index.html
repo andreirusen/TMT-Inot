@@ -5,16 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>RAATHLETIC</title>
+    <title>TMT Cursuri Inot</title>
     <meta name="description" content="RAATHLETIC" />
 
     <!-- Bootstrap -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
-      crossorigin="anonymous"
-    />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
 
     <!-- Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -38,29 +33,17 @@
   <!-- Body -->
   <body class="container-fluid px-0 py-0">
     <!-- Navbar  -->
-    <nav class="container-fluid navbar navbar-expand-lg py-2">
+    <nav class="container-fluid navbar navbar-expand-lg py-2 ">
       <div class="container">
         <!-- Brand/logo -->
         <div class="col-lg-1d">
           <a href="/index.html" class="navbar-brand">
             <img
               class="icon-logo transform-scale-sml"
-              src="/Assets/Logo/RAA/RAA-Logo.png"
+              src="/Assets/logo/TMT-Logo.png"
               alt="brand"
             />
           </a>
-        </div>
-
-        <!-- Search Bar -->
-        <div class="col col-lg-5">
-          <div class="d-flex">
-            <input
-              class="form-control me-2"
-              type="search"
-              placeholder="Search"
-              aria-label="Search"
-            />
-          </div>
         </div>
 
         <!-- Phone Hamburger -->
@@ -76,7 +59,7 @@
         <!-- Nav Bar -->
         <div class="col collapse navbar-collapse" id="main_nav">
           <ul
-            class="text-right-nav navbar-nav fw-bold container justify-content-between"
+            class="text-right-nav navbar-nav fw-bold container justify-content-around"
           >
             <!-- Home -->
             <li class="nav-item hover-underline-animation">
@@ -87,30 +70,30 @@
                 >HOME</a
               >
             </li>
-            <!-- About -->
+            <!-- Despre -->
             <li class="nav-item hover-underline-animation">
               <a
                 href="/pages/about.html"
                 class="nav-link text-dark"
                 aria-current="page"
-                >ABOUT</a
+                >DESPRE</a
               >
             </li>
-            <!-- Programs -->
+            <!-- Abonamente -->
             <li class="nav-item dropdown hover-underline-animation">
               <!-- data-bs-toggle="dropdown"  FOR the next A Link-->
               <a
                 href="/pages/programs.html"
                 class="nav-link text-dark dropdown"
                 aria-expanded="false"
-                >PROGRAMS</a
+                >ABONAMENTE</a
               >
               <ul class="dropdown-menu text-center-nav container-dropdown">
                 <li>
                   <a
                     class="dropdown-item bg-dropdown-1"
                     href="/pages/p-bronze.html"
-                    >Beginner</a
+                    >Grup</a
                   >
                 </li>
                 <hr class="dropdown-divider" />
@@ -118,93 +101,13 @@
                   <a
                     class="dropdown-item bg-dropdown-2"
                     href="/pages/p-silver.html"
-                    >Intermediate</a
-                  >
-                </li>
-                <hr class="dropdown-divider" />
-                <li>
-                  <a
-                    class="dropdown-item bg-dropdown-3"
-                    href="/pages/p-gold.html"
-                    >Advanced</a
-                  >
-                </li>
-                <hr class="dropdown-divider" />
-                <li>
-                  <a
-                    class="dropdown-item bg-dropdown-4"
-                    href="/pages/p-performance.html"
-                    >Performance</a
+                    >Individual</a
                   >
                 </li>
               </ul>
             </li>
-            <!-- Account -->
-            <li class="nav-item dropdown hover-underline-animation">
-              <!-- data-bs-toggle="dropdown"  FOR the next A Link-->
 
-              <a
-                href="/pages/account.html"
-                id="login"
-                class="nav-link dropdown"
-              >
-                <span class="myaccount-icon">
-                  <svg
-                    class="header-right-icons"
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 448 512"
-                  >
-                    <path
-                      d="M224 256A128 128 0 1 0 224 0a128 128 0 1 0 0 256zm-45.7 48C79.8 304 0 383.8 0 482.3C0 498.7 13.3 512 29.7 512H418.3c16.4 0 29.7-13.3 29.7-29.7C448 383.8 368.2 304 269.7 304H178.3z"
-                    />
-                  </svg>
-                </span>
-              </a>
-              <!-- <ul class="dropdown-menu text-center-nav">
-                <li>
-                  <a class="dropdown-item" href="/pages/account.html">Log In</a>
-                </li>
-                <li>
-                  <hr class="dropdown-divider" />
-                </li>
-                <li>
-                  <a class="dropdown-item" href="/pages/account.html"
-                    >Sign Up</a
-                  >
-                </li>
-              </ul> -->
-            </li>
-            <!-- Cart -->
-            <!-- <li class="nav-item dropdown hover-underline-animation">
-              <a href="/pages/cart.html" class="nav-link dropdown">
-                <span class="cart-icon">
-                  <svg
-                    class="header-right-icons"
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 576 512"
-                  >
-                    <path
-                      d="M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H199.7c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5H24C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z"
-                    />
-                  </svg>
-                </span>
-              </a>
-              <ul class="dropdown-menu text-center-nav">
-                <li>
-                  <a class="dropdown-item" href="/pages/cart.html"
-                    >Products - 0</a
-                  >
-                </li>
-                <li>
-                  <hr class="dropdown-divider" />
-                </li>
-                <li>
-                  <a class="dropdown-item" href="/pages/cart.html"
-                    >Shop Details</a
-                  >
-                </li>
-              </ul>
-            </li> -->
+            
           </ul>
         </div>
       </div>
@@ -214,45 +117,36 @@
     <div class="wrapper interactive-section-two">
       <!-- Interactive Program Section -->
       <section class="interactive-section-one">
-        <img
-          src="/Assets/backgrounds/FG-1.png"
-          class="fg1-showcase-img"
-          id="fg1-img"
-        />
-        <img
-          src="/Assets/backgrounds/FG-2.png"
-          class="fg2-showcase-img"
-          id="fg2-img"
-        />
-        <img
-          src="/Assets/backgrounds/FG-3.png"
-          class="fg3-showcase-img"
-          id="fg3-img"
-        />
-        <img
-          src="/Assets/home-page/fg-athlet-left.png"
-          class="fg-athlet-img grow-and-shrink-img"
-          id=""
-        />
 
+        <!-- Carousel -->
+        <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="/Assets/home/home-2.jpg" class="carousel-img" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="/Assets/home/home-3.jpg" class=" carousel-img" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="/Assets/home/home-1.jpg" class="carousel-img" alt="...">
+            </div>
+          </div>
+        </div>
+        
         <!-- Section -->
         <div class="showcase-section m-5">
-          <!-- Java Typed -->
-          <h2 class="header-typed text-center d-none d-md-block">
-            <span id="typed-strings"></span>
-          </h2>
 
           <!-- Title -->
           <h1 class="header-welcome text-center" id="header-showcase">
-            Welcome
+            Cursuri de inot!
           </h1>
 
           <!-- Button -->
           <button
-            class="btn-showcase btn btn-danger btn-lg rounded-pill transform-scale-md grow-and-shrink"
+            class="btn-showcase btn primary-bg btn-lg rounded-pill transform-scale-md grow-and-shrink"
             type="button"
           >
-            <a href="/pages/account.html" class="text-white"> START NOW </a>
+            <a href="/pages/account.html" class="">INCEPE ACUM</a>
           </button>
         </div>
       </section>
@@ -263,12 +157,12 @@
       <!-- Company Rating -->
       <div class="header-content container reveal">
         <h1>
-          1,000<span class="text-danger">+</span> of our users love our
+          1,000<span class="primary-text">+</span> of our users love our
           products.
         </h1>
         <p>
           We only provide
-          <span class="text-danger">great products</span> combined with
+          <span class="primary-text">great products</span> combined with
           excellent customer service. See what our satisfied customers are
           saying about our services.
         </p>
@@ -282,7 +176,7 @@
           <!-- User Details -->
           <div class="user-details">
             <img
-              src="/Assets/home-page/ratings/image-alex.png"
+              src="/Assets/ratings/image-alex.png"
               alt="User"
               style="width: 80px"
             />
@@ -292,27 +186,27 @@
               <div class="stars">
                 <img
                   class="star"
-                  src="/Assets/home-page/ratings/icon-star.svg"
+                  src="/Assets/ratings/icon-star.svg"
                   alt="star"
                 />
                 <img
                   class="star"
-                  src="/Assets/home-page/ratings/icon-star.svg"
+                  src="/Assets/ratings/icon-star.svg"
                   alt="star"
                 />
                 <img
                   class="star"
-                  src="/Assets/home-page/ratings/icon-star.svg"
+                  src="/Assets/ratings/icon-star.svg"
                   alt="star"
                 />
                 <img
                   class="star"
-                  src="/Assets/home-page/ratings/icon-star.svg"
+                  src="/Assets/ratings/icon-star.svg"
                   alt="star"
                 />
                 <img
                   class="star"
-                  src="/Assets/home-page/ratings/icon-star.svg"
+                  src="/Assets/ratings/icon-star.svg"
                   alt="star"
                 />
               </div>
@@ -334,7 +228,7 @@
           <!-- User Details -->
           <div class="user-details">
             <img
-              src="/Assets/home-page/ratings/image-irene.jpg"
+              src="/Assets/ratings/image-irene.jpg"
               alt="User"
               style="width: 80px"
             />
@@ -344,27 +238,27 @@
               <div class="stars">
                 <img
                   class="star"
-                  src="/Assets/home-page/ratings/icon-star.svg"
+                  src="/Assets/ratings/icon-star.svg"
                   alt="star"
                 />
                 <img
                   class="star"
-                  src="/Assets/home-page/ratings/icon-star.svg"
+                  src="/Assets/ratings/icon-star.svg"
                   alt="star"
                 />
                 <img
                   class="star"
-                  src="/Assets/home-page/ratings/icon-star.svg"
+                  src="/Assets/ratings/icon-star.svg"
                   alt="star"
                 />
                 <img
                   class="star"
-                  src="/Assets/home-page/ratings/icon-star.svg"
+                  src="/Assets/ratings/icon-star.svg"
                   alt="star"
                 />
                 <img
                   class="star"
-                  src="/Assets/home-page/ratings/icon-star.svg"
+                  src="/Assets/ratings/icon-star.svg"
                   alt="star"
                 />
               </div>
@@ -386,7 +280,7 @@
           <!-- User Details -->
           <div class="user-details">
             <img
-              src="/Assets/home-page/ratings/image-anne.jpg"
+              src="/Assets/ratings/image-anne.jpg"
               alt="User"
               style="width: 80px"
             />
@@ -396,27 +290,27 @@
               <div class="stars">
                 <img
                   class="star"
-                  src="/Assets/home-page/ratings/icon-star.svg"
+                  src="/Assets/ratings/icon-star.svg"
                   alt="star"
                 />
                 <img
                   class="star"
-                  src="/Assets/home-page/ratings/icon-star.svg"
+                  src="/Assets/ratings/icon-star.svg"
                   alt="star"
                 />
                 <img
                   class="star"
-                  src="/Assets/home-page/ratings/icon-star.svg"
+                  src="/Assets/ratings/icon-star.svg"
                   alt="star"
                 />
                 <img
                   class="star"
-                  src="/Assets/home-page/ratings/icon-star.svg"
+                  src="/Assets/ratings/icon-star.svg"
                   alt="star"
                 />
                 <img
                   class="star"
-                  src="/Assets/home-page/ratings/icon-star.svg"
+                  src="/Assets/ratings/icon-star.svg"
                   alt="star"
                 />
               </div>
@@ -472,21 +366,21 @@
           >
             <p class="text-size-md">
               By adopting these simple habits, you can increase your
-              <span class="text-danger">productivity</span>, stay
-              <span class="text-danger">motivated</span>, and make steady
-              <span class="text-danger">progress</span> towards your goals.
+              <span class="primary-text">productivity</span>, stay
+              <span class="primary-text">motivated</span>, and make steady
+              <span class="primary-text">progress</span> towards your goals.
             </p>
             <br />
             <p class="text-size-md">
               Remember,
-              <span class="text-danger">success is not achieved overnight</span
+              <span class="primary-text">success is not achieved overnight</span
               >, but through
-              <span class="text-danger">consistent effort and dedication</span>.
+              <span class="primary-text">consistent effort and dedication</span>.
             </p>
             <br />
             <p>
               So start implementing these habits
-              <span class="text-danger">today</span>, and see the results for
+              <span class="primary-text">today</span>, and see the results for
               yourself!
             </p>
           </div>
@@ -509,7 +403,7 @@
       >
         <div class="col">
           <h3 class="my-3">
-            Sign up for our <span class="text-danger">newsletter</span>
+            Sign up for our <span class="primary-text">newsletter</span>
           </h3>
         </div>
         <form action="">
@@ -521,10 +415,9 @@
             placeholder="Enter your email"
             aria-label="Enter your email"
             aria-describedby="button-addon2"
-            required value="<?php echo ?>"
           />
 
-          <button class="btn btn-danger button-addon2" type="button">
+          <button class="btn primary-bg button-addon2" type="button">
             SUBSCRIBE
           </button>
         </form>
@@ -584,7 +477,7 @@
     <div class="btn-to-top grow-and-shrink">
       <button
         onclick="topFunction()"
-        class="btn btn-danger btn-lg rounded-pill transform-scale-md"
+        class="btn primary-bg btn-lg rounded-pill transform-scale-md"
         type="button"
         title="Go to top"
       >
@@ -592,17 +485,6 @@
       </button>
     </div>
 
-    <!-- Button Let's Begin -->
-    <div class="btn-let-begin d-none d-md-block grow-and-shrink">
-      <button
-        class="btn btn-danger btn-lg rounded-pill transform-scale-md"
-        type="button"
-      >
-        <a href="/pages/account.html">
-          <span class="text-uppercase text-white"> Let's Begin </span>
-        </a>
-      </button>
-    </div>
 
     <!-- Cookie -->
     <div
@@ -625,7 +507,7 @@
         <div class="text-nowrap">
           <button
             type="button"
-            class="btn btn-sm btn-danger me-1"
+            class="btn btn-sm primary-bg me-1"
             data-bs-dismiss="offcanvas"
             aria-label="Close"
           >
@@ -645,11 +527,7 @@
 
     <!-- Script -->
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
-      crossorigin="anonymous"
-    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
     <script
       src="https://kit.fontawesome.com/af8da007ac.js"
       crossorigin="anonymous"
