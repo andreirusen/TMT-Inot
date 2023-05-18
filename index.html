@@ -228,7 +228,7 @@
     </div>
 
     <!-- Despre -->
-    <main class="bg-black py-5" id="despre">
+    <main class="bg-black py-5 " id="despre">
       <div class="container">
         <!-- Title -->
         <div class="reveal">
@@ -237,18 +237,18 @@
         <!-- Content -->
         <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2">
           <!-- Text -->
-          <div class="col my-4 reveal">
+          <div class="col my-4 ">
             <span class="text-wrap text-white text-justify align-self-center">
-              <h2>
+              <h2 class="reveal">
                 <span class="color-primary-text">Rusen Alin</span>
               </h2>
-              <p class="text-size-md">
+              <p class="text-size-md reveal">
                 Cu o pasiune pentru înot care a început la vârsta de 4 ani,
                 Rusen Alin a urcat treptele podiumului atât pe plan național,
                 cât și internațional.
               </p>
               <br />
-              <p class="text-size-md">
+              <p class="text-size-md reveal">
                 Acum, ca instructor de înot și student al Universității
                 Naționale de Educație Fizică și Sport din București, el își
                 dedică timpul ajutând copiii să-și învingă frica de apă și să
@@ -256,14 +256,14 @@
                 casă pentru ei.
               </p>
               <br />
-              <p class="text-size-md">
+              <p class="text-size-md reveal">
                 Oferind o primă ședință gratuită pentru copii, Rusen vă invită
                 să încercați și să descoperiți pasiunea pentru înot.
               </p>
             </span>
           </div>
           <!-- Img -->
-          <div class="col my-4 reveal">
+          <div class="col my-4 reveal reveal">
             <img
               class="showcase-img"
               src="/Assets/home/home-5.jpeg"
@@ -276,20 +276,20 @@
     </main>
 
     <!-- Abonamente -->
-    <section class="container reveal p-1 p-sm-2 p-md-4 p-lg-5">
+    <section class="container p-1 p-sm-2 p-md-4 p-lg-5">
       <!-- Text -->
-      <div class="reveal">
+      <div class=" container ">
         <!-- Titlu  -->
-        <h1 class="text-center h-text my-5">Abonamente</h1>
+        <h1 class="text-center h-text my-5 reveal">Abonamente</h1>
         <!-- Continut -->
         <span class="text-wrap text-white text-justify align-self-center my-5">
-          <p class="text-size-md">
+          <p class="text-size-md reveal">
             Ne dorim să oferim tuturor posibilitatea de a învăța să înoate,
             indiferent de vârstă. Astfel, ne-am structurat cursurile în două
             categorii: pentru copii cu vârsta peste 3 ani și pentru adulți.
           </p>
           <br />
-          <p class="text-size-md">
+          <p class="text-size-md reveal">
             Fiecare categorie are multiple variante de program, adaptate
             nevoilor și disponibilității fiecăruia. În continuare, vă prezentăm
             detalii despre numărul de ședințe, modul în care acestea se
@@ -298,7 +298,7 @@
         </span>
       </div>
       <!-- Tabel Abonamente -->
-      <div class="my-5 reveal table-container">
+      <div class="my-5  table-container reveal">
         <table class="table text-white">
           <thead>
             <tr class="text-center">
@@ -341,11 +341,16 @@
     <!-- Intrebari frecvente -->
 
     <!-- Contact -->
-    <section class="text-light p-md-5 py-5" id="contact">
-      <div
-        class="container d-flex flex-column flex-md-row justify-content-between align-item-center reveal"
-      >
-        <form action="https://formspree.io/f/xknaeajd" method="POST">
+    <section class="text-light container" id="contact">
+      <div class="contact-container">
+         <div class="row">
+                <h1 class="h-text">Contact</h1>
+        </div>
+        <div class="row">
+                <h4 style="text-align:center">Pentru orice informatie nu ezitati sa ma contactati</h4>
+        </div>
+        <div class="form-container">
+        <form action="https://formspree.io/f/xknaeajd" method="POST" class="reveal">
           <label>
             Your email:
             <input type="email" name="email" />
@@ -357,6 +362,7 @@
           <!-- your other form fields go here -->
           <button type="submit" class="">Send</button>
         </form>
+      </div>
       </div>
     </section>
 
@@ -429,11 +435,11 @@
             </div>
             <!-- User Message + Date -->
             <p>
-              L-am înscris pe fiul meu la ședințele cu Alin pentru a-i
+              "L-am înscris pe fiul meu la ședințele cu Alin pentru a-i
               îmbunătăți încrederea și îndemânarea în apă și am fost impresionat
               de progresele pe care le-a făcut în doar câteva săptămâni.
               Instructorul este atent și dedicat, iar metodele sale de învățare
-              sunt eficiente. Recomand cu încredere aceste cursuri!
+              sunt eficiente. Recomand cu încredere aceste cursuri!"
             </p>
             <p class="rating-data">
               Date: <span class="text-white">14/05/2023</span>
@@ -451,7 +457,7 @@
                 style="width: 80px"
               />
               <div class="user-info">
-                <h5>Irene Roberts</h5>
+                <h5>Georgiana Halbu</h5>
                 <span class="verified">Verified Buyer</span>
                 <div class="stars">
                   <img
@@ -484,9 +490,10 @@
             </div>
             <!-- User Message + Date -->
             <p>
-              "Customer service is always excellent and very quick turn around.
-              Completely delighted with the simplicity of the purchase and the
-              speed of delivery."
+              "Sunt foarte mulțumit de progresele pe care le-a făcut fiul meu în
+              timpul cursurilor de înot cu Rusen Alin. Instructorul este atent
+              și dedicat, iar metodele sale de învățare sunt eficiente și
+              distractive. Recomand!"
             </p>
             <p class="rating-data">
               Date: <span class="text-white">16/02/2023</span>
@@ -504,7 +511,7 @@
                 style="width: 80px"
               />
               <div class="user-info">
-                <h5>Anne Wallace</h5>
+                <h5>Ana-Maria Dimitrov</h5>
                 <span class="verified">Verified Buyer</span>
                 <div class="stars">
                   <img
@@ -537,9 +544,119 @@
             </div>
             <!-- User Message + Date -->
             <p>
-              "Put an order with this company and can only praise them for the
-              very high standard. Will definitely use them again and recommend
-              them to everyone!"
+              " Am început cursurile de înot cu Rusen ca începător și acum, după
+              doar câteva luni, mă simt în siguranță și încrezător în apă.
+              Instructorul este profesionist și pasionat, iar atmosfera din
+              cadrul cursurilor este relaxată și încurajatoare. Recomand cu
+              încredere."
+            </p>
+            <p class="rating-data">
+              Date: <span class="text-white">02/03/2023</span>
+            </p>
+          </div>
+        </div>
+        <!-- Card 4 -->
+        <div class="carousel-item p-3">
+          <div class="user-review">
+            <!-- User Details -->
+            <div class="user-details">
+              <img
+                src="/Assets/ratings/image-george.jpg"
+                alt="User"
+                style="width: 80px"
+              />
+              <div class="user-info">
+                <h5>George Nistor</h5>
+                <span class="verified">Verified Buyer</span>
+                <div class="stars">
+                  <img
+                    class="star"
+                    src="/Assets/ratings/icon-star.svg"
+                    alt="star"
+                  />
+                  <img
+                    class="star"
+                    src="/Assets/ratings/icon-star.svg"
+                    alt="star"
+                  />
+                  <img
+                    class="star"
+                    src="/Assets/ratings/icon-star.svg"
+                    alt="star"
+                  />
+                  <img
+                    class="star"
+                    src="/Assets/ratings/icon-star.svg"
+                    alt="star"
+                  />
+                  <img
+                    class="star"
+                    src="/Assets/ratings/icon-star.svg"
+                    alt="star"
+                  />
+                </div>
+              </div>
+            </div>
+            <!-- User Message + Date -->
+            <p>
+              "Cursurile de înot cu Alin au fost o experiență fantastică pentru
+              fiica mea. În scurt timp și-a îmbunătățit încrederea și condiția
+              fizică. Cursuri de nota 10!"
+            </p>
+            <p class="rating-data">
+              Date: <span class="text-white">02/03/2023</span>
+            </p>
+          </div>
+        </div>
+        <!-- Card 4 -->
+        <div class="carousel-item p-3">
+          <div class="user-review">
+            <!-- User Details -->
+            <div class="user-details">
+              <img
+                src="/Assets/ratings/image-ionut.jpg"
+                alt="User"
+                style="width: 80px"
+              />
+              <div class="user-info">
+                <h5>Ionut Avasiloae</h5>
+                <span class="verified">Verified Buyer</span>
+                <div class="stars">
+                  <img
+                    class="star"
+                    src="/Assets/ratings/icon-star.svg"
+                    alt="star"
+                  />
+                  <img
+                    class="star"
+                    src="/Assets/ratings/icon-star.svg"
+                    alt="star"
+                  />
+                  <img
+                    class="star"
+                    src="/Assets/ratings/icon-star.svg"
+                    alt="star"
+                  />
+                  <img
+                    class="star"
+                    src="/Assets/ratings/icon-star.svg"
+                    alt="star"
+                  />
+                  <img
+                    class="star"
+                    src="/Assets/ratings/icon-star.svg"
+                    alt="star"
+                  />
+                </div>
+              </div>
+            </div>
+            <!-- User Message + Date -->
+            <p>
+              "L-am înscris pe fiul meu la ședințele cu Alin pentru a-i
+              îmbunătăți încrederea și îndemânarea în apă și am fost impresionat
+              de progresele pe care le-a făcut în doar câteva săptămâni.
+              Instructorul este atent și dedicat, iar metodele sale de învățare
+              sunt eficiente. Recomand cu încredere aceste cursuri!"
             </p>
             <p class="rating-data">
               Date: <span class="text-white">02/03/2023</span>
@@ -572,7 +689,7 @@
     </div>
 
     <!-- Location Map -->
-    <div class="container-fluid bg-black p-1 p-sm-2 p-md-4 p-lg-5">
+    <div class="container bg-black p-1 p-sm-2 p-md-4 p-lg-5">
       <div
         id="map"
         style="width: 100%; height: 400px"
