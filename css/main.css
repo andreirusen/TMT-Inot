@@ -212,8 +212,11 @@ textarea:valid ~ label {
 }
 .form-container {
   width: 650px;
-    max-width: 100%;
-    margin: 25px auto;
+  max-width: 100%;
+  margin: 25px auto;
+}
+.social-container {
+  border: 2px solid var(--color-primary);
 }
 
 @media only screen and (max-width: 768px) {
@@ -246,10 +249,7 @@ textarea {
   border-radius: 4px;
 }
 
-
-
 .btn-submit {
-  width: 625px;
   font-family: "Poppins", sans-serif;
   border: none;
   border-radius: 25px;
@@ -258,7 +258,6 @@ textarea {
   padding: 15px 0;
   cursor: pointer;
   transition: all 400ms ease;
-
 }
 .btn-submit:hover {
   color: var(--color-primary);

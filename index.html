@@ -335,98 +335,96 @@
           </tbody>
         </table>
       </div>
-      <div id="contact"></div>
-      <div></div>
-      <div></div>
-      <div></div>
     </section>
 
     <!-- Intrebari frecvente -->
 
     <!-- Contact -->
-    <section class="container p-1 p-sm-2 p-md-4 p-lg-5">
+    <section class="container p-1 p-sm-2 p-md-4 p-lg-5" id="contact">
       <!-- Title -->
-      <div class="row text-center p-1 p-sm-2 p-md-4 p-lg-5 reveal">
+      <div class="text-center p-1 p-sm-2 p-md-4 p-lg-5 reveal">
         <h2 class="h-text">Contact</h2>
         <h4 style="text-align: center" class="text-light">
           Pentru orice informatie nu ezitati sa ma contactati
         </h4>
       </div>
       <!-- Form Section -->
-      <div class="row container">
-        <!-- Left Container -->
-        <div class="col contact-container justify-content-start ">
-          <div class="row reveal mb-5">
-            <h2 class="h-text">Social</h2>
+      <div class="container">
+        <div class="row">
+          <!-- Left Container -->
+          <div class="col contact-container justify-content-start">
+            <div class="row reveal mb-5">
+              <h2 class="h-text">Social</h2>
+            </div>
+            <div class="row reveal my-5">
+              <h4 class="text-light text-left">
+                Telefon: +40 771 810 710
+                <br />
+                WhatsApp: +40 771 810 710
+                <br />
+                Facebook:
+                <br />
+                Instagram:
+                <br />
+                TikTok:
+              </h4>
+            </div>
           </div>
-          <div class="row reveal my-5">
-            <h4 class="text-light text-left">
-              Telefon: +40 771 810 710
-              <br>
-              WhatsApp: +40 771 810 710
-              <br>
-              Facebook:
-              <br>
-              Instagram:
-              <br>
-              TikTok:
-            </h4>
-          </div>
-        </div>
 
-        <!-- Right Container -->
-        <div class="col contact-container">
-          <div class="row reveal">
-            <h1 class="h-text">Email</h1>
-          </div>
-          <div class="row reveal">
-            <h4 style="text-align: center" class="text-light"></h4>
-          </div>
-          <form
-            class="row form-container reveal"
-            action="https://formspree.io/f/xknaeajd"
-            method="POST"
-            name="contact-form"
-            accept-charset="utf-8"
-          >
-            <div class="col-xs-12">
-              <div class="styled-input wide">
-                <input type="text" name="name" required />
-                <label>Name</label>
-              </div>
+          <!-- Right Container -->
+          <div class="col contact-container">
+            <div class="row reveal">
+              <h1 class="h-text">Email</h1>
             </div>
-            <div class="col-md-6 col-sm-12">
-              <div class="styled-input">
-                <input type="email" name="_replyto" required />
-                <label>Email</label>
-              </div>
+            <div class="row reveal">
+              <h4 style="text-align: center" class="text-light"></h4>
             </div>
-            <div class="col-md-6 col-sm-12">
-              <div class="styled-input" style="float: right">
-                <input type="text" name="number" required />
-                <label>Phone Number</label>
-              </div>
-            </div>
-            <div class="col-xs-12">
-              <div class="styled-input wide">
-                <textarea name="message" id="message" required></textarea>
-                <label>Message</label>
-              </div>
-            </div>
-            <input
-              type="hidden"
-              name="_subject"
-              id="email-subject"
-              value="Survey Responses"
-            />
-            <button
-              class="col btn-submit btn btn-lg primary-bg fw-semibold"
-              type="submit"
-              value="Contact Form Submission"
+            <form
+              class="row form-container reveal"
+              action="https://formspree.io/f/xknaeajd"
+              method="POST"
+              name="contact-form"
+              accept-charset="utf-8"
             >
-              Send
-            </button>
-          </form>
+              <div class="col-xs-12">
+                <div class="styled-input wide">
+                  <input type="text" name="name" required />
+                  <label>Name</label>
+                </div>
+              </div>
+              <div class="col-sm-12">
+                <div class="styled-input wide">
+                  <input type="email" name="_replyto" required />
+                  <label>Email</label>
+                </div>
+              </div>
+              <div class="col-sm-12">
+                <div class="styled-input wide">
+                  <input type="text" name="number" required />
+                  <label>Phone Number</label>
+                </div>
+              </div>
+              <div class="col-xs-12">
+                <div class="styled-input wide">
+                  <textarea name="message" id="message" required></textarea>
+                  <label>Message</label>
+                </div>
+              </div>
+              <input
+                type="hidden"
+                name="_subject"
+                id="email-subject"
+                value="Survey Responses"
+              />
+              <button
+                class="col btn-submit btn btn-lg primary-bg fw-semibold"
+                type="submit"
+                value="Contact Form Submission"
+              >
+                Send
+              </button>
+            </form>
+          </div>
         </div>
       </div>
     </section>
