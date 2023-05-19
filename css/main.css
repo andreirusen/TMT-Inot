@@ -137,7 +137,6 @@ nav {
 .showcase-img {
   max-width: 100%;
   border-radius: 25px;
-  box-shadow: 1px 1px 30px var(--color-primary);
 }
 
 /* Showcase - Shadow  */
@@ -176,7 +175,6 @@ nav {
   color: var(--color-white);
   border-radius: 25px;
   border: 2px solid var(--color-primary);
-  box-shadow: 1px 1px 30px var(--color-primary);
   padding: 1.5rem 1.5rem;
 }
 @media (max-width: 494px) {
@@ -299,7 +297,6 @@ textarea {
   height: 340px;
   border-radius: 25px;
   border: 2px solid var(--color-primary);
-  box-shadow: 1px 1px 30px var(--color-primary);
   padding: 2rem 2rem;
 }
 /* Rating - Cards Body */
@@ -449,6 +446,10 @@ hr.solid {
   border-radius: 25px;
   border: 2px solid var(--color-primary);
   box-shadow: 1px 1px 30px var(--color-primary);
+}
+.box-border {
+  border-radius: 25px;
+  border: 2px solid var(--color-primary);
 }
 /* Buttons */
 .btn-to-top {
