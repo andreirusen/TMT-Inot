@@ -1,9 +1,9 @@
-// Parallax Effect
-let headerShowcase = document.querySelector("#header-showcase");
-
 //Navigation
 const navEL = document.querySelector(".navbar");
 let lastScrollY = window.scrollY;
+
+// Parallax Effect
+let headerShowcase = document.querySelector("#header-showcase");
 
 window.addEventListener("scroll", function () {
    // Navbar 
@@ -14,7 +14,7 @@ window.addEventListener("scroll", function () {
   }
   lastScrollY = window.scrollY;
 
-  // Parallax
+  // Parallax Effect
   let value = window.scrollY;
   headerShowcase.style.marginTop = value * 1.2 + "px";
 });
