@@ -1,6 +1,20 @@
 // Parallax Effect
 let headerShowcase = document.querySelector("#header-showcase");
+
+//Navigation
+const navEL = document.querySelector(".navbar");
+let lastScrollY = window.scrollY;
+
 window.addEventListener("scroll", function () {
+   // Navbar 
+   if (lastScrollY < window.scrollY) {
+    navEL.classList.add("navbar--hidden");
+  } else {
+    navEL.classList.remove("navbar--hidden");
+  }
+  lastScrollY = window.scrollY;
+
+  // Parallax
   let value = window.scrollY;
   headerShowcase.style.marginTop = value * 1.2 + "px";
 });
@@ -42,15 +56,14 @@ function reveal() {
   }
 }
 
-
 // Cookie
 console.clear();
-"use strict";
-(function() {
-   var offcanvas = document.getElementById("offcanvas"),
-       bs_offcanvas = new bootstrap.Offcanvas(offcanvas);
-   
-   bs_offcanvas.show();
+("use strict");
+(function () {
+  var offcanvas = document.getElementById("offcanvas"),
+    bs_offcanvas = new bootstrap.Offcanvas(offcanvas);
+
+  bs_offcanvas.show();
 })();
 
 // Google Map
@@ -66,19 +79,8 @@ async function initMap() {
     map: map,
     // label: "RA",
     title: "RA Athletic",
-    Animation: google.maps.Animation.BOUNCE
-  })
+    Animation: google.maps.Animation.BOUNCE,
+  });
 }
 initMap();
 
-//Navigation
-const nav = document.querySelector(".navbar");
-let lastScrollY = window.scrollY;
-
-window.addEventListener("scroll", () => {
-  if (lastScrollY < windows.scrollY) {
-    console.log('we are going down');
-  } else {
-    console.log('we go up')
-  }
-})
