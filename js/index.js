@@ -1,3 +1,6 @@
+//Navigation
+
+
 // Parallax Effect
 let btnHome = document.querySelector(".btn-home");
 window.addEventListener("scroll", function () {
