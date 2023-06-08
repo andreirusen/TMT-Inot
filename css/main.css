@@ -301,12 +301,17 @@ textarea {
 
 /* Rating Carousel */
 .rating-container {
-  height: 340px;
-  border-radius: 25px;
-  border: 2px solid var(--color-primary);
+  /* height: 340px; */
+  /* border-radius: 25px; */
+  /* border: 2px solid var(--color-primary); */
   padding: 2rem 2rem;
 }
 /* Rating - Cards Body */
+.carousel-item {
+  height: 340px;
+  border-radius: 25px;
+  border: 2px solid var(--color-primary);
+}
 .carousel-inner {
   justify-content: center;
   margin: 0;
@@ -362,11 +367,22 @@ textarea {
   .rating-container {
     height: auto;
   }
+  .carousel-item {
+    height: auto;
+  }
   .star {
     width: 16px;
   }
 }
 /* Rating - Buttons (Left + Right) */
+.carousel-control-next {
+  right: 1%;
+  color: var(--color-white);
+}
+.carousel-control-prev {
+  left: 1%;
+  color: var(--color-white);
+}
 .carousel-control-next,
 .carousel-control-prev {
   width: 15%;
