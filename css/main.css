@@ -464,9 +464,17 @@ hr.solid {
   bottom: 5%;
   right: 3%;
   z-index: 9;
+  color: white;
 }
 
 /* Cookies */
+.btn-cockie {
+  background-color: var(--color-primary);
+}
+.btn-cockie:hover {
+  background-color: var(--color-gray-300);
+  color: var(--color-black);
+}
 .offcanvas {
   background-color: var(--color-black);
   color: var(--color-white);
