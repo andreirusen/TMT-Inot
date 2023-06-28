@@ -308,6 +308,8 @@ textarea {
 }
 /* Rating - Cards Body */
 .carousel-item {
+}
+.carousel-border {
   height: 340px;
   border-radius: 25px;
   border: 2px solid var(--color-primary);
