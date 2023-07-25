@@ -5,11 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link
-      rel="icon"
-      href="/assets/logo/TMT-Logo - title.png"
-      type="TMT-Logo"
-    />
+    <link rel="icon" href="/assets/logo/TMT-Logo - title.png" type="TMT-Logo" />
     <title>TMT - Cursuri Inot</title>
     <meta name="description" content="Cursuri de inot" />
 
@@ -75,8 +71,15 @@
       })({ key: "AIzaSyC_s-dLS1bgs-qXCqLDdGoBJne4ox4sxbw", v: "weekly" });
     </script>
 
+    <!-- Swipper -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+
     <!-- CSS -->
     <link rel="stylesheet" href="/css/main.css" />
+    <link rel="stylesheet" href="/css/carousel.css" />
   </head>
 
   <!-- Body -->
@@ -234,7 +237,7 @@
         <!-- Content -->
         <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2">
           <!-- Text -->
-          <div class="col my-4">
+          <div class="col my-4 d-none">
             <span class="text-wrap text-white text-justify align-self-center">
               <h2 class="reveal">
                 <span class="color-primary-text">Rusen Alin</span>
@@ -260,13 +263,82 @@
             </span>
           </div>
           <!-- Img -->
-          <div class="col my-4 reveal">
+          <div class="col my-4 reveal d-none">
             <img
               class="showcase-img"
               src="/Assets/home/home-5.jpeg"
               alt="Medals"
             />
           </div>
+        </div>
+
+        <!-- Carousel Antrenori  -->
+        <div class="container">
+          <div class="container">
+            <span class="text-wrap text-white text-justify align-self-center">
+              <p class="text-size-md reveal">
+                Bine ai venit la <span class="primary-color">TMT</span> -
+                <span class="primary-color">TOT MAI TARE</span>! Locul unde
+                inotul devine o incursiune fascinanta! Indrazneste sa te arunci
+                in lumea apei alaturi de noi. Indiferent daca esti copil sau
+                adult, te vom ghida cu pasiune si pricepere de la zero, intr-un
+                mod usor si captivant. Descopera bucuria de a inota, iar fiecare
+                moment va fi o aventura de neuitat. Vino sa-ti dezvolti
+                increderea si sa simti placerea de a plutii in valurile
+                invioratoare.
+              </p>
+              <br />
+              <p class="text-size-md reveal">
+                La TMT, inotul este mai mult decat o activitate sportiva – este
+                o pasiune si o comunitate de oameni entuziasti, uniti de
+                dragostea pentru apa. Indiferent de nivelul tau de experienta,
+                vei gasi aici o atmosfera prietenoasa si incurajatoare, unde
+                prieteniile se leaga si se intaresc. Evenimentele noastre
+                sociale si competitiile amicale aduc oamenii impreuna si creaza
+                amintiri de neuitat.
+              </p>
+              <br />
+              <p class="text-size-md reveal">
+                Bine ai venit in comunitatea noastra, unde oricine devine
+                <span class="primary-color">TOT MAI TARE</span>!
+              </p>
+            </span>
+          </div>
+          <!-- Titlu -->
+          <div class="reveal">
+            <h1 class="text-center h-text m-5">Antrenori</h1>
+          </div>
+          <!-- Carousel  -->
+          <section class="section-cards reveal">
+            <div class="swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide swiper-slide--one">
+                  <div class="text-center">
+                    <a>ALIN</a>
+                  </div>
+                </div>
+                <div class="swiper-slide swiper-slide--two">
+                  <div class="text-center">
+                    <a>ANDREI</a>
+                  </div>
+                </div>
+                <div class="swiper-slide swiper-slide--three">
+                  <div class="text-center">
+                    <a>ALEX</a>
+                  </div>
+                </div>
+                <div class="swiper-slide swiper-slide--four">
+                  <div class="text-center">
+                    <a>ANDREEA</a>
+                  </div>
+                </div>
+              </div>
+              <!-- Navigation buttons -->
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </section>
         </div>
       </div>
     </main>
@@ -356,7 +428,7 @@
             <div class="row reveal">
               <h4 class="text-light text-left">
                 <p class="my-5">
-                  <i class="fa-solid fa-phone" style="color: #ffffff"></i> 
+                  <i class="fa-solid fa-phone" style="color: #ffffff"></i>
                   +40 771 810 711
                 </p>
                 <p class="my-5">
@@ -882,6 +954,8 @@
       src="https://kit.fontawesome.com/af8da007ac.js"
       crossorigin="anonymous"
     ></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script src="/js/index.js"></script>
+    <script src="/js/carousel.js"></script>
   </body>
 </html>

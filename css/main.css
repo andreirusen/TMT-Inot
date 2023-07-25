@@ -69,7 +69,9 @@ footer {
   align-items: center;
   text-align: center;
 }
-
+.primary-color {
+  color: var(--color-primary);
+}
 /* Navigation */
 nav {
   z-index: 999999;
