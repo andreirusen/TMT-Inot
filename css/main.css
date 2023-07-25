@@ -137,8 +137,8 @@ nav {
   color: var(--color-white);
 }
 .btn-showcase a {
-  color: var(--color-white);
-  text-shadow: 0px 3px 3px var(--color-black), 0px 3px 3px var(--color-primary);
+  color: var(--color-black);
+  /* text-shadow: 0px 3px 3px var(--color-white), 0px 3px 3px var(--color-white); */
 }
 .btn-showcase:hover {
   background-color: var(--color-gray-200);
