@@ -54,7 +54,6 @@ body {
   background-color: var(--color-black);
 }
 a {
-  color: var(--color-black);
   text-decoration: none;
 }
 svg {
@@ -138,7 +137,6 @@ nav {
 }
 .btn-showcase a {
   color: var(--color-black);
-  /* text-shadow: 0px 3px 3px var(--color-white), 0px 3px 3px var(--color-white); */
 }
 .btn-showcase:hover {
   background-color: var(--color-gray-200);

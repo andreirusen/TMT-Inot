@@ -44,8 +44,6 @@ font-family: 'Poppins', sans-serif;
   position: relative;
   display: flex;
   gap: 50px;
-  padding: 0 50px;
-  max-width: 90vw;
   margin: 0 auto;
 }
 
@@ -54,7 +52,6 @@ font-family: 'Poppins', sans-serif;
   text-decoration: none;
   text-transform: uppercase;
   color: #151515;
-  font-weight: 500;
   background: var(--color-primary);
   border: 1px solid var(--color-primary);
   border-radius: 3.125rem;
@@ -63,7 +60,8 @@ font-family: 'Poppins', sans-serif;
   font-weight: 400;
   font-size: 1.4rem;
   line-height: 1.4;
-  font-family: "Permanent Marker", cursive;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
   transition: 0.3s ease-in-out;
 }
 
@@ -136,21 +134,25 @@ font-family: 'Poppins', sans-serif;
 
 /* Background */
 .swiper-slide--one {
+  border-radius: 25px;
   background: linear-gradient(to top, #0f2027, #203a4300, #2c536400),
     url("/assets/home/home-5.jpeg") no-repeat 50% 50% / cover;
 }
 
 .swiper-slide--two {
+  border-radius: 25px;
   background: linear-gradient(to top, #0f2027, #203a4300, #2c536400),
-    url("/assets/home/home-5.jpeg") no-repeat 50% 50% / cover;
+    url("/assets/cards/Andrei.jpg") no-repeat 50% 50% / cover;
 }
 
 .swiper-slide--three {
+  border-radius: 25px;
   background: linear-gradient(to top, #0f2027, #203a4300, #2c536400),
     url("/assets/home/home-5.jpeg") no-repeat 50% 50% / cover;
 }
 
 .swiper-slide--four {
+  border-radius: 25px;
   background: linear-gradient(to top, #0f2027, #203a4300, #2c536400),
     url("/assets/home/home-5.jpeg") no-repeat 50% 50% / cover;
 }
