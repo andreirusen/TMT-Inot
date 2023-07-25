@@ -64,6 +64,16 @@ font-family: 'Poppins', sans-serif;
   font-weight: 600;
   transition: 0.3s ease-in-out;
 }
+@media (max-width: 992px) {
+  .section-cards a {
+    border-radius: 3.125rem;
+    font-size: 0.8rem;
+    line-height: 1.4;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+
+  }
+}
 
 .swiper-slide a:hover {
   color: #fff;
@@ -160,3 +170,4 @@ font-family: 'Poppins', sans-serif;
 .swiper-3d .swiper-slide-shadow-right {
   background-image: none;
 }
+
