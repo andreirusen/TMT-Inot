@@ -27,10 +27,10 @@ font-family: 'Poppins', sans-serif;
     0 1px 4px -1px rgba(0, 0, 0, 0.04);
   --lt-shadowActive: 0 0 8px -2px rgba(0, 0, 0, 0.1),
     0 6px 20px -3px rgba(0, 0, 0, 0.2);
-  --font-size-small: 13px;
-  --font-size-medium: 20px;
-  --font-size-large: 36px;
-  --font-size-x-large: 42px;
+  --font-size-small: 18px;
+  --font-size-medium: 22px;
+  --font-size-large: 26px;
+  --font-size-x-large: 30px;
   --spacing-20: 0.44rem;
   --spacing-30: 0.67rem;
   --spacing-40: 1rem;
@@ -38,6 +38,41 @@ font-family: 'Poppins', sans-serif;
   --spacing-60: 2.25rem;
   --spacing-70: 3.38rem;
   --spacing-80: 5.06rem;
+}
+.text-size-sml {
+  font-family: 'Poppins', sans-serif; 
+  font-size: var(--font-size-small);
+}
+.text-size-md {
+  font-family: 'Poppins', sans-serif; 
+  font-size: var(--font-size-medium);
+}
+.text-size-lg {
+  font-family: 'Poppins', sans-serif; 
+  font-size: var(--font-size-large);
+}
+.text-size-xlg {
+  font-family: 'Poppins', sans-serif; 
+  font-size: var(--font-size-x-large);
+}
+
+@media (max-width: 768px) {
+  .text-size-sml {
+    font-family: 'Poppins', sans-serif; 
+    font-size: 12px;
+  }
+  .text-size-md {
+    font-family: 'Poppins', sans-serif; 
+    font-size: 16px;
+  }
+  .text-size-lg {
+    font-family: 'Poppins', sans-serif; 
+    font-size: 20px;
+  }
+  .text-size-xlg {
+    font-family: 'Poppins', sans-serif; 
+    font-size: 24px;
+  }
 }
 
 /* HTML */
