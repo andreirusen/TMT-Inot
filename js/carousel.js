@@ -45,4 +45,4 @@ window.addEventListener("resize", function () {
 // Timer to change the slider every 4 seconds
 setInterval(function () {
   swiper.slideNext();
-}, 4000);
+}, 5000);
