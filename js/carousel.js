@@ -1,9 +1,19 @@
-// Rating Carousel
-var swiper = new Swiper(".swiper", {
+var swiper = null; // Declare a variable to store the Swiper instance
+
+function initializeSwiper() {
+  var screenWidth = window.innerWidth || document.documentElement.clientWidth;
+  var slidesPerViewValue = screenWidth < 992 ? 1 : 2;
+
+  if (swiper) {
+    // If Swiper is already initialized, destroy it first
+    swiper.destroy();
+  }
+
+  swiper = new Swiper(".swiper", {
     effect: "coverflow",
     grabCursor: true,
     centeredSlides: true,
-    slidesPerView: 2,
+    slidesPerView: slidesPerViewValue,
     speed: 600,
     loop: true,
     coverflowEffect: {
@@ -22,10 +32,17 @@ var swiper = new Swiper(".swiper", {
       clickable: false,
     },
   });
-  
-  // Timer to change the slider every 4 seconds
-  setInterval(function() {
-    swiper.slideNext();
-  }, 4000);
-  
-  
+}
+
+// Initialize Swiper on page load
+initializeSwiper();
+
+// Reinitialize Swiper when the window is resized
+window.addEventListener("resize", function () {
+  initializeSwiper();
+});
+
+// Timer to change the slider every 4 seconds
+setInterval(function () {
+  swiper.slideNext();
+}, 4000);
