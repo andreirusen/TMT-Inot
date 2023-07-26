@@ -40,37 +40,37 @@ font-family: 'Poppins', sans-serif;
   --spacing-80: 5.06rem;
 }
 .text-size-sml {
-  font-family: 'Poppins', sans-serif; 
+  font-family: "Poppins", sans-serif;
   font-size: var(--font-size-small);
 }
 .text-size-md {
-  font-family: 'Poppins', sans-serif; 
+  font-family: "Poppins", sans-serif;
   font-size: var(--font-size-medium);
 }
 .text-size-lg {
-  font-family: 'Poppins', sans-serif; 
+  font-family: "Poppins", sans-serif;
   font-size: var(--font-size-large);
 }
 .text-size-xlg {
-  font-family: 'Poppins', sans-serif; 
+  font-family: "Poppins", sans-serif;
   font-size: var(--font-size-x-large);
 }
 
 @media (max-width: 768px) {
   .text-size-sml {
-    font-family: 'Poppins', sans-serif; 
+    font-family: "Poppins", sans-serif;
     font-size: 12px;
   }
   .text-size-md {
-    font-family: 'Poppins', sans-serif; 
+    font-family: "Poppins", sans-serif;
     font-size: 16px;
   }
   .text-size-lg {
-    font-family: 'Poppins', sans-serif; 
+    font-family: "Poppins", sans-serif;
     font-size: 20px;
   }
   .text-size-xlg {
-    font-family: 'Poppins', sans-serif; 
+    font-family: "Poppins", sans-serif;
     font-size: 24px;
   }
 }
@@ -742,4 +742,72 @@ hr.solid {
   }
 }
 
-/* Body Content */
+/* Social Bar */
+
+.fl-fl {
+  border-radius: 25px 0 0 25px;
+  background: var(--color-primary);
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  padding: 4px;
+  width: 230px;
+  position: fixed;
+  right: -180px;
+  z-index: 1000;
+  font: normal normal 10px Arial;
+  -webkit-transition: all 0.25s ease;
+  -moz-transition: all 0.25s ease;
+  -ms-transition: all 0.25s ease;
+  -o-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+  font-family: 'Poppins', sans-serif; 
+
+}
+
+.fa-brands {
+  font-size: 25px;
+  color: var(--color-black);
+  padding: 10px 4px;
+  width: 40px;
+  margin-left: 8px;
+}
+.fa-phone {
+  font-size: 25px;
+  color: var(--color-black);
+  padding: 10px 4px;
+  width: 40px;
+  margin-left: 8px;
+}
+
+.fl-fl:hover {
+  right: 0;
+}
+
+.fl-fl a {
+  color: var(--color-black) !important;
+  text-decoration: none;
+  font-weight: 600;
+  text-align: center;
+  line-height: 43px !important;
+  vertical-align: top !important;
+}
+
+.float-fb {
+  top: 160px;
+}
+
+.float-tw {
+  top: 215px;
+}
+
+.float-gp {
+  top: 270px;
+}
+
+.float-ig {
+  top: 325px;
+}
+
+.float-pn {
+  top: 380px;
+}
