@@ -116,9 +116,9 @@ nav {
   position: fixed;
   transition: transform 0.5s;
 }
-.navbar--hidden {
+/* .navbar--hidden {
   transform: translateY(-62px);
-}
+} */
 .icon-logo {
   height: 45px;
 }

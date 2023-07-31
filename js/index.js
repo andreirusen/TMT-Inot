@@ -1,6 +1,6 @@
 //Navigation
-const navEL = document.querySelector(".navbar");
-let lastScrollY = window.scrollY;
+// const navEL = document.querySelector(".navbar");
+// let lastScrollY = window.scrollY;
 
 // Parallax Effect
 let headerShowcase = document.querySelector("#header-showcase");
