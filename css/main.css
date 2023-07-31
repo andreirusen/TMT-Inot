@@ -875,3 +875,12 @@ hr.solid {
 .float-pn {
   top: 380px;
 }
+
+/* Progress Bar */
+.progress-bar {
+  height: 0.5rem;
+  bottom: 0;
+  width: 0%;
+  position: fixed;
+  background-color: var(--color-primary);
+}
