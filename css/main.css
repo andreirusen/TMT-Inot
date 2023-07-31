@@ -884,3 +884,13 @@ hr.solid {
   position: fixed;
   background-color: var(--color-primary);
 }
+
+/* Loader */
+#preloader {
+  background: var(--color-black) url(/assets/loading.gif) no-repeat center;
+  background-size: 80%;
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  z-index: 100;
+}

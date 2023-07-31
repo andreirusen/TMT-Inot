@@ -1,22 +1,35 @@
+// Loader
+var preloader = document.getElementById("preloader");
+window.addEventListener("load", function () {
+  preloader.style.display = "none";
+});
+
 //Navigation
 // const navEL = document.querySelector(".navbar");
 // let lastScrollY = window.scrollY;
 
 // Parallax Effect
 let headerShowcase = document.querySelector("#header-showcase");
+const progressBarEl = document.getElementById("progress-bar");
 
 window.addEventListener("scroll", function () {
-   // Navbar 
-   if (lastScrollY < window.scrollY) {
-    navEL.classList.add("navbar--hidden");
-  } else {
-    navEL.classList.remove("navbar--hidden");
-  }
-  lastScrollY = window.scrollY;
+  // Navbar
+  // if (lastScrollY < window.scrollY) {
+  //   navEL.classList.add("navbar--hidden");
+  // } else {
+  //   navEL.classList.remove("navbar--hidden");
+  // }
+  // lastScrollY = window.scrollY;
 
   // Parallax Effect
   let value = window.scrollY;
   headerShowcase.style.marginTop = value * 1.2 + "px";
+
+  // Progress Bar
+  let height = document.body.scrollHeight - window.innerHeight;
+  let scrollPosition = document.documentElement.scrollTop;
+  let width = (scrollPosition / height) * 100;
+  progressBarEl.style.width = `${width}%`;
 });
 
 // Button To Top - Right
@@ -71,7 +84,6 @@ console.clear();
   }
 })();
 
-
 // Google Map
 let map;
 async function initMap() {
@@ -89,4 +101,3 @@ async function initMap() {
   });
 }
 initMap();
-
