@@ -477,11 +477,11 @@ textarea {
 }
 /* Rating - Buttons (Left + Right) */
 .carousel-control-next {
-  right: 1%;
+  left: 90%;
   color: var(--color-white);
 }
 .carousel-control-prev {
-  left: 1%;
+  left: -30px;
   color: var(--color-white);
 }
 .carousel-control-next,
@@ -893,4 +893,9 @@ hr.solid {
   width: 100%;
   position: fixed;
   z-index: 100;
+}
+
+.footer-line {
+  border-bottom: 4px solid var(--color-primary);
+  width: 90%;
 }
