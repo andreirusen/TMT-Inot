@@ -899,3 +899,7 @@ hr.solid {
   border-bottom: 4px solid var(--color-primary);
   width: 90%;
 }
+
+.social-color {
+  color: var(--color-white);
+}
