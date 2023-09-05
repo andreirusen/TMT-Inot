@@ -1,4 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://db.onlinewebfonts.com/c/ac9d8158b3517faaa24ecd1ca8a4e001?family=Kulturista"); 
+/*   
+font-family: "Kulturista";
+font-weight: bold; */
+
 /*
 font-family: 'Itim', cursive;
 font-family: 'Kalam', cursive;
@@ -534,6 +539,7 @@ hr.solid {
     -3px 0px 10px var(--color-primary);
 }
 .header-text {
+
   z-index: 3;
   letter-spacing: 0.2rem;
   text-transform: uppercase;
