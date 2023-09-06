@@ -216,18 +216,18 @@ svg {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 0;
+    gap: 20px;
   }
   .s-inot {
-    width: 100vw;
-    height: 49.5vh;
-    border-radius: 0;
+    width: 90vw;
+    height: 40vh;
+    border-radius: 25px;
 
   }
   .s-fitness {
-    width: 100vw;
-    height: 49.5vh;
-    border-radius: 0;
+    width: 90vw;
+    height: 40vh;
+    border-radius: 25px;
 
   }
 }
