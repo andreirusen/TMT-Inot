@@ -539,7 +539,6 @@ hr.solid {
     -3px 0px 10px var(--color-primary);
 }
 .header-text {
-
   z-index: 3;
   letter-spacing: 0.2rem;
   text-transform: uppercase;
