@@ -149,9 +149,11 @@ svg {
   height: 25px;
 }
 .intro-head {
-  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
   z-index: 99;
-  top: 50;
 }
 .intro-img {
   width: 100%;
@@ -216,7 +218,6 @@ svg {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 20px;
   }
   .s-inot {
     width: 90vw;
