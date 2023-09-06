@@ -163,8 +163,8 @@ font-family: 'Poppins', sans-serif;
 
 .swiper-slide--four {
   border-radius: 25px;
-  background: linear-gradient(to top, #0f2027, #203a4300, #2c536400),
-    url("/assets/cards/Andrei2.jpg") no-repeat 50% 50% / cover;
+  /* background: linear-gradient(to top, #0f2027, #203a4300, #2c536400),
+    url("/assets/cards/Andrei2.jpg") no-repeat 50% 50% / cover; */
 }
 .swiper-3d .swiper-slide-shadow-left,
 .swiper-3d .swiper-slide-shadow-right {
