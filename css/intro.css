@@ -157,8 +157,6 @@ svg {
 }
 .intro-img {
   width: 100%;
-  margin: 5px 0 10px 0;
-
 }
 .intro-container {
   display: flex;
@@ -172,7 +170,7 @@ svg {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  /* gap: 20px; */
+  gap: 20px;
 }
 .next-site {
   display: flex;
@@ -213,18 +211,16 @@ svg {
     z-index: 99;
     top: 0;
   }
-  .selection-container {
-    gap: 20px;
-  }
 }
 @media (max-width: 1000px) {
+  .intro-img {
+    display: none;
+  }
   .selection-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 95vh;
-
   }
   .s-inot {
     width: 90vw;
