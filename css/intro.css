@@ -153,7 +153,7 @@ svg {
   z-index: 99;
   top: 50;
 }
-.intro-img{
+.intro-img {
   width: 100%;
 }
 .intro-container {
@@ -182,12 +182,16 @@ svg {
 .s-inot {
   width: 40vw;
   height: 80vh;
+  border-radius: 25px;
+
   background: linear-gradient(to top, #0f2027, #203a4300, #2c536400),
     url("/assets/intro/intro-inot.png") no-repeat 50% 50% / cover;
 }
 .s-fitness {
   width: 40vw;
   height: 80vh;
+  border-radius: 25px;
+
   background: linear-gradient(to top, #0f2027, #203a4300, #2c536400),
     url("/assets/intro/intro-fitness.png") no-repeat 50% 50% / cover;
 }
@@ -217,9 +221,13 @@ svg {
   .s-inot {
     width: 100vw;
     height: 50vh;
+    border-radius: 0;
+
   }
   .s-fitness {
     width: 100vw;
     height: 50vh;
+    border-radius: 0;
+
   }
 }
