@@ -222,17 +222,19 @@ svg {
     justify-content: center;
     align-items: center;
     height: 100%;
-    gap: 10px;
+    gap: 0;
   }
   .s-inot {
     width: 90vw;
     height: 40vh;
     border-radius: 25px;
-    margin-top: 20px;
+    margin-top: 5%;
   }
   .s-fitness {
     width: 90vw;
     height: 40vh;
     border-radius: 25px;
+    margin-top: 5%;
+
   }
 }
