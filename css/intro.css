@@ -177,7 +177,7 @@ font-family: 'Poppins', sans-serif;
     url("/assets/intro/intro-fitness.png") no-repeat 50% 50% / cover;
 }
 .s-inot:hover {
-  transform: scale(1.03);
+  transform: scale(1.02);
   color: var(--color-primary);
 }
 .s-fitness:hover {
