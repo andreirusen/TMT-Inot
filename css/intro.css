@@ -127,12 +127,6 @@ font-family: 'Poppins', sans-serif;
   color: var(--color-primary);
 }
 
-/* HTML */
-html {
-  scroll-behavior: smooth;
-  margin: 0%;
-  padding: 0%;
-}
 /*  Body */
 body {
   font-family: "Poppins", sans-serif;
