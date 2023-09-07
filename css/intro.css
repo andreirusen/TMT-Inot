@@ -42,7 +42,6 @@ font-family: 'Poppins', sans-serif;
   --spacing-70: 3.38rem;
   --spacing-80: 5.06rem;
 }
-
 /* Text Color + Format + Fonts */
 .text-size-sml {
   font-family: "Poppins", sans-serif;
@@ -127,21 +126,6 @@ font-family: 'Poppins', sans-serif;
   color: var(--color-primary);
 }
 
-/*  Body */
-body {
-  font-family: "Poppins", sans-serif;
-  overflow-y: auto;
-  overflow-x: hidden;
-  font-size: var(--font-size-medium);
-  background-color: var(--color-black);
-}
-a {
-  text-decoration: none;
-}
-svg {
-  width: 25px;
-  height: 25px;
-}
 .intro-head {
   display: flex;
   justify-content: center;
