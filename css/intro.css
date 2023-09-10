@@ -41,7 +41,7 @@ font-family: 'Poppins', sans-serif;
   --spacing-60: 2.25rem;
   --spacing-70: 3.38rem;
   --spacing-80: 5.06rem;
-}
+} 
 /* Text Color + Format + Fonts */
 .text-size-sml {
   font-family: "Poppins", sans-serif;
@@ -189,6 +189,10 @@ font-family: 'Poppins', sans-serif;
     position: fixed;
     z-index: 99;
     top: 0;
+  }
+  .intro-img {
+    height: 200px;
+    width: 100%;
   }
 }
 @media (max-width: 1000px) {
