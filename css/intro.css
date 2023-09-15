@@ -46,7 +46,7 @@ html {
   background-color: var(--color-black);
 }
 body {
-  background: linear-gradient(to bottom, #030708, #05090a00, #050a0c00),
+  background: linear-gradient(to bottom, #030708, #00000000, #00000000),
     url("/assets/intro/bg.jpg") no-repeat 50% 50% / cover;
 }
 /* Text Color + Format + Fonts */
@@ -175,7 +175,7 @@ body {
   height: 60vh;
   border-radius: 25px;
 
-  background: linear-gradient(to top, #030708, #05090a00, #050a0c00),
+  background: linear-gradient(to top, #030708, #00000000, #00000000),
     url("/assets/intro/intro-inot.png") no-repeat 50% 50% / cover;
 }
 .s-fitness {
@@ -183,7 +183,7 @@ body {
   height: 60vh;
   border-radius: 25px;
 
-  background: linear-gradient(to top, #030708, #05090a00, #050a0c00),
+  background: linear-gradient(to top, #030708, #00000000, #00000000),
     url("/assets/intro/intro-fitness.png") no-repeat 50% 50% / cover;
 }
 .s-inot:hover {
