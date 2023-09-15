@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-@import url("https://db.onlinewebfonts.com/c/ac9d8158b3517faaa24ecd1ca8a4e001?family=Kulturista"); 
+@import url("https://db.onlinewebfonts.com/c/ac9d8158b3517faaa24ecd1ca8a4e001?family=Kulturista");
 /*   
 font-family: "Kulturista";
 font-weight: bold; */
@@ -126,7 +126,7 @@ footer {
 }
 
 /* Lines of the Toggler */
-.toggler-icon{
+.toggler-icon {
   width: 30px;
   height: 3px;
   background-color: #e74c3c;
@@ -135,7 +135,7 @@ footer {
 }
 
 /* Adds Space between the lines */
-.middle-bar{
+.middle-bar {
   margin: 5px auto;
 }
 
@@ -172,7 +172,7 @@ footer {
 
 /* Color of Toggler when collapsed */
 .navbar-toggler.collapsed .toggler-icon {
-  background-color: var(--color-black);
+  background-color: var(--color-white);
 }
 
 /* Basic Navbard */
@@ -181,7 +181,7 @@ nav {
   font-family: "Poppins", sans-serif;
 }
 .navbar-inot {
-  background-color: var(--color-white);
+  background-color: var(--color-black);
 }
 .navbar-fitness {
   background-color: var(--color-black);
@@ -198,17 +198,23 @@ nav {
 }
 /* .navbar .nav-item .dropdown-menu {
   background-color: var(--color-black);
-}
-.fw-semibold {
+} */
+
+/* .fw-semibold {
   color: var(--color-white);
 } */
 
 /* .navbar--hidden {
   transform: translateY(-62px);
 } */
+
 .icon-logo {
-  height: 48px;
+  height: 40px;
 }
+.icon-logo-fitness {
+  height: 40px;
+}
+
 /* Navigation - Drop Colors */
 .bg-dropdown-1:hover {
   background-color: var(--color-primary);
@@ -496,6 +502,10 @@ textarea {
   }
   .star {
     width: 16px;
+  }
+  .carousel-control-next,
+  .carousel-control-prev {
+    display: none;
   }
 }
 /* Rating - Buttons (Left + Right) */
@@ -847,8 +857,7 @@ hr.solid {
   -ms-transition: all 0.25s ease;
   -o-transition: all 0.25s ease;
   transition: all 0.25s ease;
-  font-family: 'Poppins', sans-serif; 
-
+  font-family: "Poppins", sans-serif;
 }
 
 .fa-brands {

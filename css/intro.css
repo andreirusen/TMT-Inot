@@ -42,6 +42,13 @@ font-family: 'Poppins', sans-serif;
   --spacing-70: 3.38rem;
   --spacing-80: 5.06rem;
 }
+html {
+  background-color: var(--color-black);
+}
+body {
+  background: linear-gradient(to bottom, #030708, #05090a00, #050a0c00),
+    url("/assets/intro/bg.jpg") no-repeat 50% 50% / cover;
+}
 /* Text Color + Format + Fonts */
 .text-size-sml {
   font-family: "Poppins", sans-serif;
@@ -134,7 +141,8 @@ font-family: 'Poppins', sans-serif;
   z-index: 99;
 }
 .intro-img {
-  width: 100%;
+  margin: 5%;
+  width: 95%;
 }
 .intro-container {
   display: flex;
@@ -155,34 +163,34 @@ font-family: 'Poppins', sans-serif;
   flex-direction: column;
   justify-content: center;
   align-content: center;
-  border: 2px solid var(--color-primary);
+  /* border: 2px solid var(--color-primary); */
+}
+.next-site:hover {
 }
 .card-name {
   text-align: center;
 }
 .s-inot {
-  width: 40vw;
-  height: 80vh;
+  width: 30vw;
+  height: 60vh;
   border-radius: 25px;
 
-  background: linear-gradient(to top, #0f2027, #203a4300, #2c536400),
+  background: linear-gradient(to top, #030708, #05090a00, #050a0c00),
     url("/assets/intro/intro-inot.png") no-repeat 50% 50% / cover;
 }
 .s-fitness {
-  width: 40vw;
-  height: 80vh;
+  width: 30vw;
+  height: 60vh;
   border-radius: 25px;
 
-  background: linear-gradient(to top, #0f2027, #203a4300, #2c536400),
+  background: linear-gradient(to top, #030708, #05090a00, #050a0c00),
     url("/assets/intro/intro-fitness.png") no-repeat 50% 50% / cover;
 }
 .s-inot:hover {
   transform: scale(1.02);
-  color: var(--color-primary);
 }
 .s-fitness:hover {
   transform: scale(1.02);
-  color: var(--color-primary);
 }
 @media (min-width: 1000px) {
   .intro-head {
@@ -211,11 +219,12 @@ font-family: 'Poppins', sans-serif;
     height: 30vh;
     border-radius: 25px;
     margin-top: 5%;
+    margin: 0 0 5% 0;
   }
   .s-fitness {
     width: 90vw;
     height: 30vh;
     border-radius: 25px;
-    margin-top: 5%;
+    margin: 5% 0 5% 0;
   }
 }
