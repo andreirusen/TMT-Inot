@@ -179,12 +179,30 @@ footer {
 nav {
   z-index: 999999;
   font-family: "Poppins", sans-serif;
+}
+.navbar-inot {
   background-color: var(--color-white);
+}
+.navbar-fitness {
+  background-color: var(--color-black);
 }
 .navbar {
   position: fixed;
   transition: transform 0.5s;
 }
+.nav-link {
+  color: white;
+}
+.nav-link:hover {
+  color: var(--color-primary);
+}
+/* .navbar .nav-item .dropdown-menu {
+  background-color: var(--color-black);
+}
+.fw-semibold {
+  color: var(--color-white);
+} */
+
 /* .navbar--hidden {
   transform: translateY(-62px);
 } */
