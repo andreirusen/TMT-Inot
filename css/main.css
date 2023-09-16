@@ -196,9 +196,12 @@ nav {
 .nav-link:hover {
   color: var(--color-primary);
 }
-/* .navbar .nav-item .dropdown-menu {
+.navbar .nav-item .dropdown-menu {
   background-color: var(--color-black);
-} */
+}
+.dropdown-item {
+  color: var(--color-white);
+}
 
 /* .fw-semibold {
   color: var(--color-white);
