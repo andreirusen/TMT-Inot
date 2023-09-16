@@ -174,7 +174,6 @@ footer {
 .navbar-toggler.collapsed .toggler-icon {
   background-color: var(--color-white);
 }
-
 /* Basic Navbard */
 nav {
   z-index: 999999;
@@ -846,7 +845,7 @@ hr.solid {
 
 .fl-fl {
   border-radius: 25px 0 0 25px;
-  background: var(--color-primary);
+  background: var(--color-black);
   text-transform: uppercase;
   letter-spacing: 3px;
   padding: 4px;
@@ -865,14 +864,14 @@ hr.solid {
 
 .fa-brands {
   font-size: 25px;
-  color: var(--color-black);
+  color: var(--color-primary);
   padding: 10px 4px;
   width: 40px;
   margin-left: 8px;
 }
 .fa-phone {
   font-size: 25px;
-  color: var(--color-black);
+  color: var(--color-primary);
   padding: 10px 4px;
   width: 40px;
   margin-left: 8px;
@@ -883,9 +882,10 @@ hr.solid {
 }
 
 .fl-fl a {
-  color: var(--color-black) !important;
+  color: var(--color-white);
   text-decoration: none;
-  font-weight: 600;
+  font-size: 11px !important;
+  font-weight: bold !important;
   text-align: center;
   line-height: 43px !important;
   vertical-align: top !important;

@@ -42,13 +42,36 @@ font-family: 'Poppins', sans-serif;
   --spacing-70: 3.38rem;
   --spacing-80: 5.06rem;
 }
-html {
-  background-color: var(--color-black);
-}
+
 body {
-  background: linear-gradient(to bottom, #030708, #00000000, #00000000),
-    url("/assets/intro/bg.jpg") no-repeat 50% 50% / cover;
+  position: relative;
 }
+
+body::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url("/assets/intro/bg.jpg") no-repeat 50% 50% / cover;
+  filter: blur(2px); /* Apply a blur effect to the image */
+  z-index: -1;
+}
+
+body::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(to bottom, #030708, #00000000, #00000000);
+  z-index: -2;
+}
+
+/* The content and linear gradient will be on top of the blurred image */
+
 /* Text Color + Format + Fonts */
 .text-size-sml {
   font-family: "Poppins", sans-serif;
@@ -133,6 +156,14 @@ body {
   color: var(--color-primary);
 }
 
+.navbar-intro {
+  z-index: 999;
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
 .intro-head {
   display: flex;
   justify-content: center;
@@ -140,9 +171,9 @@ body {
   flex-direction: row;
   z-index: 99;
 }
-.intro-img {
-  margin: 5%;
-  width: 95%;
+.intro-logo {
+  height: 80px;
+  margin: 10% 0 10% 0;
 }
 .intro-container {
   display: flex;
@@ -154,7 +185,7 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  align-items: center;
+  /* align-items: center; */
   height: 100vh;
   gap: 20px;
 }
