@@ -54,7 +54,8 @@ body::after {
   left: 0;
   right: 0;
   bottom: 0;
-  background: linear-gradient(to bottom, #030708, #00000000, #00000000), url("/assets/intro/bg.jpg") no-repeat 50% 50% / cover;
+  background: linear-gradient(to bottom, #030708, #00000000, #00000000),
+    url("/assets/intro/bg.jpg") no-repeat 50% 50% / cover;
   filter: blur(4px);
   z-index: -1;
 }
@@ -163,7 +164,8 @@ body::before {
   justify-content: center;
   align-items: center;
   margin-bottom: 5%;
-  background: linear-gradient(to bottom, #030708, #00000000), transparent;
+  background: linear-gradient(to bottom, #030708, #00000000, #00000000),
+    transparent;
 }
 .intro-head {
   display: flex;

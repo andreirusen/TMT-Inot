@@ -12,11 +12,7 @@ window.addEventListener("load", function () {
 let headerShowcase = document.querySelector("#header-showcase");
 const progressBarEl = document.getElementById("progress-bar");
 
-// Navbar Close 
-function closeNavbar() {
-  // Close the navbar by toggling the collapse class
-  $('.navbar-collapse').collapse('hide');
-}
+
 
 // Close the navbar when clicking outside of it
 document.addEventListener('click', function (event) {
@@ -109,7 +105,6 @@ async function initMap() {
   new google.maps.Marker({
     position: { lat: 44.434831044470364, lng: 26.147003026598945 },
     map: map,
-    // label: "RA",
     title: "RA Athletic",
     Animation: google.maps.Animation.BOUNCE,
   });
