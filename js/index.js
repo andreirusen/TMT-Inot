@@ -12,6 +12,20 @@ window.addEventListener("load", function () {
 let headerShowcase = document.querySelector("#header-showcase");
 const progressBarEl = document.getElementById("progress-bar");
 
+// Navbar Close 
+function closeNavbar() {
+  // Close the navbar by toggling the collapse class
+  $('.navbar-collapse').collapse('hide');
+}
+
+// Close the navbar when clicking outside of it
+document.addEventListener('click', function (event) {
+  var target = event.target;
+  if (!target.closest('.navbar')) {
+    closeNavbar();
+  }
+});
+
 window.addEventListener("scroll", function () {
   // Navbar
   // if (lastScrollY < window.scrollY) {
