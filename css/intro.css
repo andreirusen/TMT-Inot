@@ -199,8 +199,7 @@ body::before {
   align-content: center;
   /* border: 2px solid var(--color-primary); */
 }
-.next-site:hover {
-}
+
 .card-name {
   text-align: center;
 }
@@ -210,6 +209,7 @@ body::before {
   border-radius: 25px;
 
   background: url("/assets/intro/intro-inot.png") no-repeat 50% 50% / cover;
+  transition: all .2s ease-in-out;
 }
 .s-fitness {
   width: 40vw;
@@ -217,6 +217,7 @@ body::before {
   border-radius: 25px;
 
   background: url("/assets/intro/intro-fitness.png") no-repeat 50% 50% / cover;
+  transition: all .2s ease-in-out;
 }
 .s-inot:hover {
   transform: scale(1.02);

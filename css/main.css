@@ -643,7 +643,7 @@ hr.solid {
   position: relative;
   transform: translateY(150px);
   opacity: 0;
-  transition: all 1s ease;
+  transition: all 2s ease;
 }
 .reveal.active {
   transform: translateY(0);
@@ -684,12 +684,15 @@ hr.solid {
 
 /* Hover Transform Animation */
 .transform-scale-sml:hover {
+  transition: all .3s ease-in-out;
   transform: scale(1.1);
 }
 .transform-scale-md:hover {
+  transition: all .3s ease-in-out;
   transform: scale(1.2);
 }
 .transform-scale-lg:hover {
+  transition: all .3s ease-in-out;
   transform: scale(1.3);
 }
 
@@ -705,12 +708,16 @@ hr.solid {
   animation-timing-function: ease-in-out;
   animation-iteration-count: infinite;
   animation-direction: alternate;
+  transition: all .2s ease-in-out;
+
 }
 .grow-and-shrink-hover:hover {
   animation: grow-and-shrink 1000ms;
   animation-timing-function: ease-in-out;
   animation-iteration-count: infinite;
   animation-direction: alternate;
+  transition: all .2s ease-in-out;
+
 }
 .grow-and-shrink-img {
   z-index: -1;
@@ -719,6 +726,8 @@ hr.solid {
   animation-iteration-count: infinite;
   animation-direction: alternate;
   height: 500px;
+  transition: all .2s ease-in-out;
+
 }
 
 /* Keyframes Section */
@@ -854,11 +863,8 @@ hr.solid {
   right: -180px;
   z-index: 1000;
   font: normal normal 10px Arial;
-  -webkit-transition: all 0.25s ease;
-  -moz-transition: all 0.25s ease;
-  -ms-transition: all 0.25s ease;
-  -o-transition: all 0.25s ease;
-  transition: all 0.25s ease;
+  transition: all .4s ease-in-out;
+
   font-family: "Poppins", sans-serif;
 }
 
