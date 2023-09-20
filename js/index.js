@@ -85,7 +85,7 @@ console.clear();
 
 (function () {
   var offcanvas = document.getElementById("offcanvas");
-
+  
   if (!sessionStorage.getItem("offcanvasShown")) {
     var bs_offcanvas = new bootstrap.Offcanvas(offcanvas);
     bs_offcanvas.show();
