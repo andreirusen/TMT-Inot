@@ -180,16 +180,17 @@ nav {
   font-family: "Poppins", sans-serif;
 }
 .navbar-inot {
-background: rgba(0, 0, 0, 0.5);
-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-backdrop-filter: blur(10px);
--webkit-backdrop-filter: blur(10px);
+  background: rgba(0, 0, 0, 0.5);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
 }
 .navbar-fitness {
   background: rgba(0, 0, 0, 0.5);
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);}
+  -webkit-backdrop-filter: blur(10px);
+}
 .navbar {
   position: fixed;
   transition: transform 0.5s;
@@ -682,7 +683,7 @@ hr.solid-sml {
   background-color: var(--color-primary);
   transform-origin: bottom right;
   border-radius: 10px;
-  transition: transform 0.25s ease-out;
+  transition: transform 0.3s ease-out;
 }
 .hover-underline-animation:hover::after {
   transform: scaleX(1);

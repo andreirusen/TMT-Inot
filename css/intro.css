@@ -220,9 +220,13 @@ body::before {
 }
 .s-inot:hover {
   transform: scale(1.02);
+  box-shadow: 0 0 10px 1px var(--color-black), 
+    0 0 30px 5px var(--color-primary);
 }
 .s-fitness:hover {
   transform: scale(1.02);
+  box-shadow: 0 0 10px 1px var(--color-black), 
+    0 0 30px 5px var(--color-primary);
 }
 @media (min-width: 1000px) {
   .intro-head {
@@ -234,7 +238,6 @@ body::before {
     height: 200px;
     width: 100%;
   }
-
 }
 @media (max-width: 1000px) {
   .intro-logo {
